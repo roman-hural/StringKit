@@ -1,6 +1,17 @@
 import Testing
 @testable import StringKit
 
-@Test func example() async throws {
-    // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+@Test func trimming() {
+    let result = StringKit.trimming(
+        "    hello swift package   "
+    )
+    #expect(result == "hello swift package")
+}
+
+@Test func capitalizesWords() {
+    let result = StringKit.capitalizedWords(
+        "hello swift package"
+    )
+
+    #expect(result == "Hello Swift Package")
 }
