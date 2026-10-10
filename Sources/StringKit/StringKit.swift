@@ -6,4 +6,8 @@ public enum StringKit {
             in: .whitespacesAndNewlines
         )
     }
+
+    public static func capitalizedWords(_ string: String) -> String {
+        string.capitalized
+    }
 }
